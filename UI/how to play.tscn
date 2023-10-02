@@ -1,0 +1,321 @@
+[gd_scene load_steps=40 format=2]
+
+[ext_resource path="res://UI/arrows.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Art/Pixel Adventure 1/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=2]
+[ext_resource path="res://Art/Pixel Adventure 2/Enemies/AngryPig/Idle (36x30).png" type="Texture" id=3]
+[ext_resource path="res://Art/Pixel Adventure 2/Enemies/Bee/Idle (36x34).png" type="Texture" id=4]
+[ext_resource path="res://UI/how to play.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Art/ChiKareGo2.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = SubResource( 1 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 4 )
+region = Rect2( 36, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 4 )
+region = Rect2( 72, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 4 )
+region = Rect2( 108, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 4 )
+region = Rect2( 144, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 4 )
+region = Rect2( 180, 0, 36, 34 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 3 )
+region = Rect2( 36, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 3 )
+region = Rect2( 72, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 3 )
+region = Rect2( 108, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 3 )
+region = Rect2( 144, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 3 )
+region = Rect2( 180, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 3 )
+region = Rect2( 216, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 3 )
+region = Rect2( 252, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 3 )
+region = Rect2( 288, 0, 36, 30 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 2 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 2 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "bee",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": true,
+"name": "pig",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"loop": true,
+"name": "player",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=42]
+extents = Vector2( 13, 13 )
+
+[sub_resource type="DynamicFontData" id=43]
+font_path = "res://Art/Adventurer.ttf"
+
+[sub_resource type="DynamicFont" id=44]
+size = 35
+font_data = SubResource( 43 )
+
+[sub_resource type="DynamicFontData" id=45]
+font_path = "res://Art/ChiKareGo2.ttf"
+
+[sub_resource type="DynamicFont" id=46]
+size = 19
+font_data = SubResource( 45 )
+
+[node name="how to play" type="ColorRect"]
+margin_left = 1.0
+margin_top = -2.0
+margin_right = 484.0
+margin_bottom = 271.0
+color = Color( 0.0980392, 0.4, 0.278431, 1 )
+script = ExtResource( 5 )
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+margin_left = 79.0
+margin_top = 96.0
+margin_right = 180.0
+margin_bottom = 125.0
+
+[node name="Label" type="Label" parent="CenterContainer2"]
+margin_left = 45.0
+margin_top = 3.0
+margin_right = 56.0
+margin_bottom = 26.0
+custom_fonts/font = SubResource( 2 )
+text = "S"
+
+[node name="arrows" parent="CenterContainer2/Label" instance=ExtResource( 1 )]
+position = Vector2( 54, 110 )
+rotation = 3.14159
+
+[node name="CenterContainer3" type="CenterContainer" parent="."]
+margin_left = 155.0
+margin_top = 95.0
+margin_right = 234.0
+margin_bottom = 127.0
+
+[node name="Label" type="Label" parent="CenterContainer3"]
+margin_left = 33.0
+margin_top = 4.0
+margin_right = 45.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+text = "D"
+
+[node name="arrows" parent="CenterContainer3/Label" instance=ExtResource( 1 )]
+position = Vector2( 91, -35 )
+rotation = 1.5708
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_left = 26.0
+margin_top = 94.0
+margin_right = 113.0
+margin_bottom = 126.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+margin_left = 37.0
+margin_top = 4.0
+margin_right = 49.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+text = "A"
+
+[node name="arrows" parent="CenterContainer/Label" instance=ExtResource( 1 )]
+position = Vector2( -88, 58 )
+rotation = -1.5708
+
+[node name="CenterContainer5" type="CenterContainer" parent="."]
+margin_left = 279.0
+margin_top = 90.0
+margin_right = 439.0
+margin_bottom = 130.0
+
+[node name="Label" type="Label" parent="CenterContainer5"]
+margin_left = 62.0
+margin_top = 8.0
+margin_right = 98.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 2 )
+text = "You"
+
+[node name="player" type="KinematicBody2D" parent="CenterContainer5"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CenterContainer5/player"]
+position = Vector2( 32, 16 )
+frames = SubResource( 15 )
+animation = "player"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CenterContainer5/player"]
+position = Vector2( 32, 16 )
+shape = SubResource( 42 )
+
+[node name="CenterContainer6" type="CenterContainer" parent="."]
+margin_left = 271.0
+margin_top = 130.0
+margin_right = 551.0
+margin_bottom = 170.0
+
+[node name="Label" type="Label" parent="CenterContainer6"]
+margin_left = 98.0
+margin_top = 8.0
+margin_right = 181.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 2 )
+text = "Enemies"
+
+[node name="pig" type="KinematicBody2D" parent="CenterContainer6"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CenterContainer6/pig"]
+position = Vector2( 40, 16 )
+frames = SubResource( 15 )
+animation = "pig"
+frame = 6
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CenterContainer6/pig"]
+position = Vector2( 40, 16 )
+shape = SubResource( 42 )
+
+[node name="bee" type="KinematicBody2D" parent="CenterContainer6"]
+position = Vector2( 40, 0 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="CenterContainer6/bee"]
+position = Vector2( 40, 16 )
+frames = SubResource( 15 )
+animation = "bee"
+frame = 5
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CenterContainer6/bee"]
+position = Vector2( 40, 16 )
+shape = SubResource( 42 )
+
+[node name="CenterContainer4" type="CenterContainer" parent="."]
+margin_left = 63.0
+margin_top = 194.0
+margin_right = 207.0
+margin_bottom = 226.0
+
+[node name="Label" type="Label" parent="CenterContainer4"]
+margin_left = 2.0
+margin_top = 4.0
+margin_right = 142.0
+margin_bottom = 27.0
+custom_fonts/font = SubResource( 2 )
+text = "SPACE - JUMP"
+
+[node name="CenterContainer7" type="CenterContainer" parent="."]
+margin_left = -1.0
+margin_top = 18.0
+margin_right = 487.0
+margin_bottom = 60.0
+
+[node name="Label" type="Label" parent="CenterContainer7"]
+margin_left = 154.0
+margin_top = 3.0
+margin_right = 334.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 44 )
+text = "how to play"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 335.0
+margin_top = 226.0
+margin_right = 398.0
+margin_bottom = 252.0
+custom_fonts/font = SubResource( 46 )
+text = "Main"
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
